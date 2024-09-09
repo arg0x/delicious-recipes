@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious - About</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/app.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.svg" alt="delicious" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="categories.html" class="nav-link"> categories </a>
+          <a href="contact.html" class="nav-link"> contact</a>
+
+          <div class="nav-link search-container">
+            <form id="search-form" action="search-result.html" method="get">
+              <input type="text" name="query" placeholder="Search..." class="search-input" required>
+              <button type="submit" class="search-button">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="nav-link user-link">
+            <a href="#" id="user-link" class="btn"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="page">
+      <section class="about-page">
+        <article>
+          <p>
+          Welcome to Delicious Recipes!, where our passion for cooking meets your love for great food.
+          Our mission is to inspire and empower home cooks of all skill levels to create delicious, wholesome meals with ease. 
+          We believe that cooking should be a joyful and rewarding experience, not a chore. 
+          Our team of culinary enthusiasts and professional chefs curates each recipe to ensure simplicity, flavor, and nutritional value. 
+          Whether you're a seasoned chef or just starting out, we're here to support your culinary journey with trusted recipes, helpful tips, and a community of fellow food lovers. 
+          Join us as we explore the world of food, one recipe at a time!
+          </p>
+          <p>
+          Join us on this flavorful journey and let’s make cooking an adventure together!        
+          </p>
+          <a href="contact.html" class="btn"> contact </a>
+        </article>
+        <img
+          src="./assets/about.jpeg"
+          alt="Person Pouring Salt in Bowl"
+          class="img about-img"
+        />
+      </section>
+     
+    </main>
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Delicious</span>
+      </p>
+    </footer>
+  </body>
+</html>

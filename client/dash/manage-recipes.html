@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/table/mainMobile.css" rel="stylesheet">
+    <link href="./css/table/tablet.css" media="(min-width: 600px)" rel="stylesheet">
+    <link href="./css/table/desktop.css" media="(min-width: 900px)" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <style>
+        a, a:visited {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        </style>
+    <script src="./js/logout.js" defer></script>
+    <script src="./js/manage-recipe.js"></script>
+    <title>Delicious - Manage Recipes</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <nav class="navbar-side sidebar">
+            <div class="nav-container">
+                <a class="navbar-brand" href="../index.html">
+                    <div class="image"><img src="../assets/logo.png" width="50" height="50"></div>
+                    <div class="sidebar-brand-text"><span>Delicious</span></div>
+                </a>
+                <hr class="sidebar-divider">
+                <ul class="navbar-nav" id="sidebar-ul">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add-recipe.html">
+                            <i class="fas fa-plus"></i>
+                            <span>Add Recipe</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="manage-recipes.html">
+                            <i class="fas fa-table"></i><span>Manage Recipes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="logout-button">
+                          <i class="fas fa-sign-out-alt"></i>
+                          <span>Logout</span>
+                        </a>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="content-wrapper">
+            <div class="navbar-top d-flex" id="page-top">
+                <div class="container-fluid d-flex">
+                </div>
+                <ul class="navbar-nav-ul d-flex">
+                    <h4 class="welcomeUser"></h4>
+                </ul>
+            </div>
+
+            <div class="index-content container-main">
+                <div class="table-section-header d-flex justify-between">
+                    <h3>Manage Recipe</h3>
+                </div>
+
+                <div class="row-table-container">
+                    <div class="table-content-row">
+                        <div class="user-setting margin-row-prof shadow-edit">
+                            <div class="user-setting-head project-head">
+                                <h6>All Recipes</h6>
+                            </div>
+                            <div class="table-row-body project-body">
+                                <div class="row-table-head margin-column-form d-flex justify-between">
+                                    <div class="table-head-col text-nowrap">
+                                        <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable">
+                                            <label class="form-label d-flex">
+                                                Show&nbsp;
+                                                <select class="form-control">
+                                                    <option value="10" selected="">10</option>
+                                                    <option value="25">25</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                </select>&nbsp;
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="table-head-col">
+                                        <div class="dataTables_filter" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="table-itself margin-column-form">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Category</th>
+                                                <th>Cooking Time</th>
+                                                <th>Servings</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="recipeTableBody">
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="row-table-head d-flex justify-between">
+                                    <div class="table-head-col table-head-col2 text-nowrap">
+                                        <p id="dataTable_info" class="dataTables_info margin-column-form" role="status"></p>
+                                    </div>
+                                    <div class="table-head-col d-flex flex-end">
+                                        <ul class="pagination margin-column-form d-flex">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <footer>
+                        <span>Copyright © Delicious 2024</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <a class="page-up-fixed" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
+    </div>
+</body>
+
+</html>

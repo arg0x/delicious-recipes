@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/profile/mainMobile.css" rel="stylesheet">
+  <link href="./css/profile/table.css" media="(min-width: 600px)" rel="stylesheet">
+  <link href="./css/profile/desktop.css" media="(min-width: 900px)" rel="stylesheet">
+  <link href="./css/all.min.css" rel="stylesheet">
+  <link href="./css/common.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+  <script src="./js/logout.js" defer></script>
+  <script src="./js/add-recipe.js"></script>
+  <title>Delicious - Add Recipe</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <nav class="navbar-side sidebar">
+      <div class="nav-container">
+        <a class="navbar-brand" href="../index.html">
+          <div class="image"><img src="../assets/logo.png" width="50" height="50"></div>
+          <div class="sidebar-brand-text"><span>Delicious</span></div>
+        </a>
+        <hr class="sidebar-divider">
+        <ul class="navbar-nav" id="sidebar-ul">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="add-recipe.html">
+              <i class="fas fa-plus"></i>
+              <span>Add Recipe</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="manage-recipes.html">
+              <i class="fas fa-table"></i><span>Manage Recipes</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" id="logout-button">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="content-wrapper">
+      <div class="navbar-top d-flex" id="page-top">
+        <div class="container-fluid d-flex"></div>
+        <ul class="navbar-nav-ul d-flex">
+          <h4 class="welcomeUser"></h4>
+        </ul>
+      </div>
+      <div class="index-content container-main">
+        <div class="prof-header d-flex justify-between">
+          <h3>Add/Update Recipe</h3>
+        </div>
+
+        <!-- Recipe Form -->
+        <div class="form-set-row">
+          <div class="form-padding-row">
+            <div class="form-setting-container shadow-edit">
+              <div class="project-head earning-header d-flex justify-between">
+                <h6 class="earning-header-text">Recipe Form</h6>
+              </div>
+
+              <div class="user-setting-body project-body">
+                <form id="recipeForm">
+                  <!-- Recipe Name -->
+                  <div class="form-row d-flex flex-direction-column margin-column-form">
+                    <label for="name"><strong>Recipe Name</strong></label>
+                    <input type="text" id="name" name="name" class="form-control-prof" required />
+                  </div>
+
+                  <!-- Description -->
+                  <div class="form-row d-flex flex-direction-column margin-column-form">
+                    <label for="description"><strong>Description</strong></label>
+                    <textarea id="description" name="description" class="form-control-prof" rows="4" required></textarea>
+                  </div>
+
+                  <!-- Image URL -->
+                  <div class="form-row d-flex flex-direction-column margin-column-form">
+                    <label for="image"><strong>Image URL</strong></label>
+                    <input type="url" id="image" name="image" class="form-control-prof" required />
+                  </div>
+
+                  <!-- Category -->
+                  <div class="form-row d-flex flex-direction-column margin-column-form">
+                    <label for="category"><strong>Category</strong></label>
+                    <input type="text" id="category" name="category" class="form-control-prof" required />
+                  </div>
+
+                  <!-- Servings -->
+                  <div class="form-row d-flex flex-direction-column margin-column-form">
+                    <label for="servings"><strong>Servings</strong></label>
+                    <input type="number" id="servings" name="servings" class="form-control-prof" min="1" required />
+                  </div>
+
+                  <!-- Cooking Time -->
+                  <div class="form-row d-flex flex-direction-column margin-column-form">
+                    <label for="cookingTime"><strong>Cooking Time (in minutes)</strong></label>
+                    <input type="number" id="cookingTime" name="cookingTime" class="form-control-prof" min="1" required />
+                  </div>
+
+                  <!-- Ingredients -->
+                  <div class="form-row d-flex flex-direction-column margin-column-form">
+                    <label for="ingredients"><strong>Ingredients (comma-separated)</strong></label>
+                    <textarea id="ingredients" name="ingredients" class="form-control-prof" rows="3" required></textarea>
+                  </div>
+
+                  <!-- Instructions -->
+                  <div class="form-row d-flex flex-direction-column margin-column-form">
+                    <label for="instructions"><strong>Instructions (comma-separated)</strong></label>
+                    <textarea id="instructions" name="instructions" class="form-control-prof" rows="4" required></textarea>
+                  </div>
+
+                  <!-- Tools -->
+                  <div class="form-row d-flex flex-direction-column margin-column-form">
+                    <label for="tools"><strong>Tools (comma-separated)</strong></label>
+                    <textarea id="tools" name="tools" class="form-control-prof" rows="3" required></textarea>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="form-row margin-row-prof d-flex justify-center">
+                    <button class="button-profile" type="submit">Add/Update Recipe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <footer>
+            <span>Copyright © Delicious 2024</span>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <a class="page-up-fixed" href="#page-top"><i class="fas fa-angle-up"></i></a>
+  </div>
+</body>
+</html>

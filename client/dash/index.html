@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index/mainMobile.css" />
+  <link href="./css/index/table.css" media="(min-width: 600px)" rel="stylesheet">
+  <link href="./css/index/desktop.css" media="(min-width: 900px)" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+  <script src="./js/logout.js" defer></script>
+  <script src="./js/index.js"></script>
+  <title>Delicious - Dashboard</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <nav class="navbar-side sidebar">
+      <div class="nav-container">
+        <a class="navbar-brand" href="../index.html">
+          <div class="image"><img src="../assets/logo.png" width="50" height="50"></div>
+          <div class="sidebar-brand-text"><span>Delicious</span></div>
+        </a>
+        <hr class="sidebar-divider">
+        <ul class="navbar-nav" id="sidebar-ul">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add-recipe.html">
+              <i class="fas fa-plus"></i>
+              <span>Add Recipe</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="manage-recipes.html">
+              <i class="fas fa-table"></i><span>Manage Recipes</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="logout-button">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="content-wrapper">
+      <div class="navbar-top d-flex" id="page-top">
+        <div class="container-fluid d-flex"></div>
+        <ul class="navbar-nav-ul d-flex">
+          <h4 id="welcomeUser">Welcome user</h4>
+        </ul>
+      </div>
+
+      <div class="index-content container-main">
+        <div class="dashboard-header d-flex justify-between">
+          <h3>Dashboard</h3>
+        </div>
+        <div class="income-inf-row ">
+          <div class="col-income">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-text">
+                  <div class="card-span"><span style="color: rgb(78, 115, 223);">Your Name</span></div>
+                  <h3><span id="username">username</span></h3>
+                </div>
+                <div class="card-icon">
+                  <i class="fas fa-user fa-2x text-gray-300"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-income">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-text">
+                  <div class="card-span"><span style="color: rgb(28, 200, 138);">Total Recipes</span></div>
+                  <div class="card-price"><span id="totalRecipes">0</span></div>
+                </div>
+                <div class="card-icon">
+                  <i class="fas fa-utensils fa-2x text-gray-300"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer">
+          <footer>
+            <span>Copyright © Delicious 2024</span>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <a class="page-up-fixed" href="#page-top"><i class="fas fa-angle-up"></i></a>
+  </div>
+</body>
+</html>
